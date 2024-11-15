@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.el-dropdown-link {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.no-border {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important; 
+}
+
+.no-border-hover:hover {
+    border: none;
+    outline: none;
+    box-shadow: none; 
+}
+
+.bg-pinkf {
+    background-color: #f494a7;
+}
+
+.text-pinkf {
+    color: #f494a7;
+}
+
+.dialog-footer {
+    display: flex;
+    justify-content: space-between;
+  }

@@ -10,6 +10,10 @@ use Inertia\Inertia;
 
 class UserController extends Controller
 {
+    public function userAuth() {
+        return Inertia::render('User/Guest');
+    }
+
     public function index()
     {
         $products = Product::with('brand', 'category', 'product_images')->orderBy('id','desc')->limit(8)->get();

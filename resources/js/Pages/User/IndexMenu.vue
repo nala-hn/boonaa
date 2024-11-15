@@ -1,6 +1,6 @@
 <script setup>
 import { Link, router } from '@inertiajs/vue3';
-import UserLayouts from './Layouts/UserLayouts.vue';
+import UserLayoutsMenu from './Layouts/UserLayoutsMenu.vue';
 import Hero from './Layouts/Hero.vue';
 import Discount from './Layouts/Discount.vue';
 import Products from '../User/Components/Products.vue';
@@ -13,7 +13,7 @@ defineProps({
 
 </script>
 <template>
-    <UserLayouts>
+    <UserLayoutsMenu>
         <!-- here section  -->
         <Hero></Hero>
         <Discount></Discount>
@@ -35,7 +35,7 @@ defineProps({
             </div>
         </div>
         <Footer></Footer>
-    </UserLayouts>
+    </UserLayoutsMenu>
 </template>
 
 

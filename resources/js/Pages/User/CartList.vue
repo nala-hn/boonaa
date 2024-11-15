@@ -1,7 +1,7 @@
 <script setup>
 import { computed, reactive } from 'vue'
 
-import UserLayouts from './Layouts/UserLayouts.vue';
+import UserLayoutsMenu from './Layouts/UserLayoutsMenu.vue';
 import { router, usePage } from '@inertiajs/vue3';
 
 defineProps({
@@ -62,7 +62,7 @@ function submit() {
 
 </script>
 <template>
-    <UserLayouts>
+    <UserLayoutsMenu>
         <section class="text-gray-600 body-font relative">
             <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
                 <div class="lg:w-2/3 md:w-1/2  rounded-lg  sm:mr-10 p-10 ">
@@ -211,4 +211,4 @@ function submit() {
                 </div>
             </div>
         </section>
-    </UserLayouts></template>
+    </UserLayoutsMenu></template>

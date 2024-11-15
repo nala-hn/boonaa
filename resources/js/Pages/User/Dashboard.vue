@@ -8,7 +8,7 @@ defineProps({
 <template>
     <UserLayouts>
 
-        <div class="relative  max-w-screen-xl py-24 mx-auto overflow-x-auto">
+        <div class="relative bg-black  max-w-screen-xl py-24 mx-auto overflow-x-auto">
             <table v-show="order.order_items.length > 0" v-for="order in orders" :key="order.id"
                 class="w-full text-sm text-left text-gray-500 dark:text-gray-400 mb-5">
                 <thead class="text-xs text-gray-700 uppercase  dark:bg-gray-700 dark:text-gray-400">

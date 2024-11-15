@@ -61,7 +61,7 @@ onUnmounted(() => {
             'bg-black border-gray-200 dark:bg-gray-900 fixed w-full z-50 transition-colors duration-300',
             scrolled
                 ? 'bg-white text-[#f594a7]'
-                : 'bg-transparent text-[#f594a7]',
+                : 'bg-white text-[#f594a7]',
         ]"
     >
         <div
@@ -83,9 +83,9 @@ onUnmounted(() => {
                 <div class="relative mr-1" @click="handleOutsideClick">
                     <button
                         @click="toggleSearch"
-                        class="relative inline-flex items-center p-2 text-sm font-medium text-center text-white bg-transparent opacity-55 rounded-full hover:bg-[#f89cae] focus:ring-4 focus:bg-[#f89cae] focus:outline-none focus:ring-red-100 dark:bg-blue-600 dark:hover:bg-pinkf dark:focus:ring-[#f89cae]"
+                        class="relative inline-flex items-center p-2 text-sm font-medium text-center text-white bg-transparent opacity-55 rounded-full hover:bg-[#f89cae] focus:bg-[#f89cae] focus:ring-4 focus:outline-none focus:ring-red-100 dark:bg-blue-600 dark:hover:bg-pinkf dark:focus:ring-[#f89cae]"
                     >
-                        <el-icon :color="scrolled ? 'black' : 'white'" :size="22"><Search /></el-icon>
+                        <el-icon :color="scrolled ? 'black' : 'black'" :size="22"><Search /></el-icon>
                     </button>
                     <div
                         v-if="isSearchActive"
@@ -96,7 +96,7 @@ onUnmounted(() => {
                             v-model="searchQuery"
                             class="p-2 border rounded-md focus:bg-[#f89cae] focus:outline-none bg-transparent"
                             :class="{
-                                'border-white': !scrolled,
+                                'border-black': !scrolled,
                                 'border-black': scrolled,
                                 'focus:border-[#f494a7]': !scrolled,
                                 'focus:ring-[#f494a7]': !scrolled,
@@ -112,7 +112,7 @@ onUnmounted(() => {
                         :href="route('cart.view')"
                         class="relative inline-flex items-center p-2 text-sm font-medium text-center text-white bg-transparent opacity-55 rounded-full hover:bg-[#f89cae] focus:bg-[#f89cae] focus:ring-4 focus:outline-none focus:ring-red-100 dark:bg-blue-600 dark:hover:bg-pinkf dark:focus:ring-[#f89cae]"
                     >
-                        <el-icon :color="scrolled ? 'black' : 'white'" :size="22"><ShoppingCart /></el-icon>
+                        <el-icon :color="scrolled ? 'black' : 'black'" :size="22"><ShoppingCart /></el-icon>
 
                         <span class="sr-only">cart</span>
                         <div
@@ -125,9 +125,9 @@ onUnmounted(() => {
                 <div class="ml-1">
                     <Link
                         :href="route('Guest')"
-                        class="relative inline-flex items-center p-2 text-sm font-medium text-center text-white bg-transparent opacity-55 rounded-full hover:bg-[#f89cae] focus:ring-4 focus:outline-none focus:ring-red-100 dark:bg-blue-600 dark:hover:bg-pinkf dark:focus:ring-[#f89cae]"
+                        class="relative inline-flex items-center p-2 text-sm font-medium text-center text-white bg-transparent opacity-55 rounded-full hover:bg-[#f89cae] focus:bg-[#f89cae] focus:ring-4 focus:outline-none focus:ring-red-100 dark:bg-blue-600 dark:hover:bg-pinkf dark:focus:ring-[#f89cae]"
                     >
-                        <el-icon :color="scrolled ? 'black' : 'white'" :size="22"><User /></el-icon>
+                        <el-icon :color="scrolled ? 'black' : 'black'" :size="22"><User /></el-icon>
                     </Link>
                 </div>
 
@@ -205,7 +205,7 @@ onUnmounted(() => {
                             href="#"
                             :class="[
                                 'block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 md:dark:text-pinkf',
-                                scrolled ? 'text-black' : 'text-white',
+                                scrolled ? 'text-black' : 'text-black',
                                 scrolled ? 'bg-transparent' : 'bg-pinkf',
 
                                 activePage === 'all'
@@ -223,7 +223,7 @@ onUnmounted(() => {
                             href="#"
                             :class="[
                                 'block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 md:dark:text-pinkf',
-                                scrolled ? 'text-black' : 'text-white',
+                                scrolled ? 'text-black' : 'text-black',
                                 scrolled ? 'bg-transparent' : 'bg-pinkf',
 
                                 activePage === 'newArrivals'
@@ -239,13 +239,13 @@ onUnmounted(() => {
                             <span
                                 :class="[
                                     'el-dropdown-link py-2 pl-3 pr-4 rounded-none md:p-0 no-border',
-                                    scrolled ? 'text-black' : 'text-white',
+                                    scrolled ? 'text-black' : 'text-black',
                                     scrolled
                                         ? 'md:text-black'
-                                        : 'md:text-white',
+                                        : 'md:text-black',
                                     scrolled
                                         ? 'dark:text-gray-300'
-                                        : 'dark:text-white',
+                                        : 'dark:text-black',
                                     isActive
                                         ? 'text-[#f494a7]'
                                         : 'text-[#f494a7]',
@@ -284,7 +284,7 @@ onUnmounted(() => {
                             href="#"
                             :class="[
                                 'block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 md:dark:text-pinkf',
-                                scrolled ? 'text-black' : 'text-white',
+                                scrolled ? 'text-black' : 'text-black',
                                 scrolled ? 'bg-transparent' : 'bg-pinkf',
 
                                 activePage === 'bestSeller'
@@ -300,7 +300,7 @@ onUnmounted(() => {
                             href="#"
                             :class="[
                                 'block py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 md:dark:text-pinkf',
-                                scrolled ? 'text-black' : 'text-white',
+                                scrolled ? 'text-black' : 'text-black',
                                 scrolled ? 'bg-transparent' : 'bg-pinkf',
 
                                 activePage === 'exclusiveSales'

@@ -1,5 +1,5 @@
 <script setup>
-import UserLayouts from './Layouts/UserLayouts.vue';
+import UserLayoutsMenu from './Layouts/UserLayoutsMenu.vue';
 import { ref, watch } from 'vue'
 import {
     Dialog,
@@ -77,7 +77,7 @@ function updateFilteredProducts() {
 
 </script>
 <template>
-    <UserLayouts>
+    <UserLayoutsMenu>
         <div class="bg-white">
             <div>
                 <!-- Mobile filter dialog -->
@@ -302,4 +302,4 @@ function updateFilteredProducts() {
             </div>
         </div>
 
-    </UserLayouts></template>
+    </UserLayoutsMenu></template>
